@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>오늘 뭐입지?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="intro-container">
+        <div id="container">
+            <h1>오늘 뭐입지?</h1>
+
+            <img src="parrot.png">
+            <div id="intro">
+                <label>성별</label>
+                <form>
+                    <label><input type="radio" value="남성" name="gender">남</label>
+                    <label><input type="radio" value="여성" name="gender">여</label>
+                </form>
+                <label>키</label>
+                <input id="height" type="number" placeholder="대충 적으셔도 됩니다" required>
+                <label>몸무게</label>
+                <input id="weight" type="number" placeholder="이것도 대충 적으셔도 됩니다 ^^">
+                <button onclick="start()">뭐입을까?</button>
+            </div>
+
+
+            <div id="chat" class="chat-container" style="display: none;">
+                <div class="chat-box">
+                    <div class="chat-message">
+                        <p class="assistant">오늘 입을 옷을 추천해드릴게요 !</p>
+                    </div>
+                </div>
+                <div id="spinner-container" class="text-center">
+                    <i class="fas fa-spinner fa-spin fa-3x" id="loder" style="display: none;"></i>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message here...">
+                    <button id="btn" onclick="spiner()">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="kakaoad">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-v6rpalwGlCjmuia9" data-ad-width="320"
+                data-ad-height="100"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+
+        <script src="app.js">
+
+        </script>
+</body>
+
+</html>

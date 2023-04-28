@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+}
+.chat-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  min-width: 00px;
+}
+
+.chat-box {
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  min-height: 300px;
+  height: 0vw;
+}
+
+.chat-message {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-message p {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 20px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #3e8e41;
+}
+
+.assistant {
+  color: blue;
+}
+
+.intro-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro-container img{
+  width: 90%;
+  min-width: 300px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+input[type=radio]{
+  display: inline-block;
+}
+input{
+  display: block;
+  margin-bottom: 10px;
+}
+
+#container{
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  width: 70%;
+  max-width: 700px;
+  height: 45%;
+  min-height: 500px;
+  border-radius: 15px;
+  background: rgba(188, 188, 188, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 93, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+[type="radio"]:hover {
+  cursor: pointer;
+}
+
+#spinner-container{
+  font-size: 8px;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  color: #1b1a1a;
+}
+
+i{
+  position: absolute;
+}
+
+h1{
+  font-family: 'a시월구일1';
+}
+
+.kakaoad{
+  display: flex;
+  min-width: 350px;
+  min-height: 200px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
