@@ -1,4 +1,4 @@
-const apiKey = "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";
+const apiKey = config.GPTapikey;
 const serverless = require('serverless-http');
 
 const { Configuration, OpenAIApi } = require("openai");
@@ -17,7 +17,7 @@ const openai = new OpenAIApi(configuration);
 
 let tem
 
-fetch('https://api.openweathermap.org/data/2.5/weather?q=Daejeon&appid=6a24018e70842873eb6e29f47e203af0')
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Daejeon&appid=${config.Wetherapikey}`)
       .then(Response => Response.json())
       .then(data => {
       tem = (data['main']['temp'] - 273.15).toFixed(1);
